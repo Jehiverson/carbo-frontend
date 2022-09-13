@@ -17,7 +17,7 @@ class Footer extends React.Component {
         return (
             <>
                 <footer className="site-footer footer-large  footer-dark	footer-wide">
-                    <div className="container call-to-action-wrap bg-no-repeat bg-center" style={{ backgroundImage: 'url('+bgimage.default+')' }}>
+                 {/*<div className="container call-to-action-wrap bg-no-repeat bg-center" style={{ backgroundImage: 'url('+bgimage.default+')' }}>
                         <div className="p-a30 bg-primary ">
                             <div className="row">
                                 <div className="col-md-8 col-sm-8">
@@ -44,7 +44,7 @@ class Footer extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* FOOTER BLOCKES START */}
                     <div className="footer-top overlay-wraper">
                         <div className="overlay-main" />

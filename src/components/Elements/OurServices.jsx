@@ -84,8 +84,7 @@ class OurServices extends React.Component {
                                                     <div className="icon-content">
                                                         <h4 className="mt-tilte m-b25">{item.title}</h4>
                                                         <p>{item.description}</p>
-                                                        <NavLink to={"/services"} className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>
-                                                    </div>
+                                                        {/*<NavLink to={"/services"} className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>*/}                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

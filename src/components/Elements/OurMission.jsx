@@ -35,7 +35,7 @@ class OurMission extends React.Component {
                                             <li><NavLink to="/about">Leed consultation</NavLink></li>
                                         </ul>
                                         <div className="text-right">
-                                            <NavLink to="/about" className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                        {/*<NavLink to="/about" className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>*/}
                                         </div>
                                     </div>
                                 </div>

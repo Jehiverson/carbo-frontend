@@ -13,9 +13,9 @@ class PostImage extends React.Component {
         return (
             <>
 
-                <Header />
-                <div className="page-content ">
-                <Banner title="Putting a plan to action, to assure your satisfaction!." pagename="Post Image" bgimage={bnrimg.default}/>
+              {/*  <Header /> */}
+                {/*<div className="page-content "> */}
+               {/* <Banner title="Putting a plan to action, to assure your satisfaction!." pagename="Post Image" bgimage={bnrimg.default}/>*/}
                     
                     {/* SECTION CONTENT START */}
                     <div className="section-full p-tb80 inner-page-padding">
@@ -23,7 +23,8 @@ class PostImage extends React.Component {
                             <div className="blog-post date-style-3 blog-detail text-black">
                                 <div className="mt-post-media clearfix m-b30">
                                     <ul className="grid-post">
-                                        <li>
+                                        <li> 
+                                            
                                             <div className="portfolio-item">
                                                 <img className="img-responsive" src={require("./../../images/blog/default/thum1.jpg").default} alt="" />
                                             </div>
@@ -38,21 +39,25 @@ class PostImage extends React.Component {
                                     </ul>
                                 </div>
                                 <div className="mt-post-title ">
-                                    <h2 className="post-title font-weight-600">From complete turn key to project manager. Leave the building to the professionals.</h2>
+                                   {/* <h2 className="post-title font-weight-600">From complete turn key to project manager. Leave the building to the professionals.</h2> */}
                                 </div>
                                 <div className="mt-post-text">
                                     <p>Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Fusce vitae dui sit amet lacus rutrum convallis. Vivamus sit amet lectus venenatis est rhoncus interdum a vitae velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae ipsa quae ab illo inventore dicta sunt explicabo.
           </p>
                                     <h4>"When it comes to your house, don’t mess with the rest, trust the best."</h4>
                                     <p> Proin tincidunt tellus ac porta volutpat. Cras mattis congue lacus id bibendum. Mauris ut sodales libero. Maecenas feugiat sit amet enim in accumsan. Here, then, is what I wanted to tell you of my architecture. I created it with courage and idealism, but also with an awareness of the fact that what is important is life, friends, and attempting to make this unjust world a better place in which to live.</p>
-                                    <blockquote className="bg-dark text-white author-quote">
+                                   
+                                   
+
+
+                                    {/*<blockquote className="bg-dark text-white author-quote">
                                         <h4 className="m-b0">We let our quality work and commitment to customer satisfaction be our slogan. quality you deserve and dependability you can count on.<i className="fa fa-quote-right" /> </h4>
                                         <div className="p-t15  text-white">
                                             <strong className="text-primary">Jessica Mcdade</strong>
                                             <span>Contractor</span>
                                         </div>
-                                    </blockquote>
-                                    <p>Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Fusce vitae dui sit amet lacus rutrum convallis. Vivamus sit amet lectus venenatis est rhoncus interdum a vitae velit. </p>
+        </blockquote> */}
+                                   {/* <p>Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Fusce vitae dui sit amet lacus rutrum convallis. Vivamus sit amet lectus venenatis est rhoncus interdum a vitae velit. </p>
                                     <div className="row">
                                         <div className="col-md-4 col-sm-4">
                                             <div className="mt-box m-b30">
@@ -75,10 +80,10 @@ class PostImage extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. It was popularised in the with the . Proin tincidunt tellus ac porta volutpat. Cras mattis congue lacus id bibendum. Mauris ut sodales libero. Maecenas feugiat sit amet enim in accumsan. Here, then, is what I wanted to tell you of my architecture. I created it with courage and idealism, but also with an awareness of the fact that what is important is life, friends, and attempting to make this unjust world a better place in which to live.</p>
-                                </div>
-                                <div className="autor-post-tag-share bdr-t-1 bdr-solid bdr-gray p-t20">
+                                    </div> */}
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. It was popularised in the with the . Proin tincidunt tellus ac porta volutpat. Cras mattis congue lacus id bibendum. Mauris ut sodales libero. Maecenas feugiat sit amet enim in accumsan. Here, then, is what I wanted to tell you of my architecture. I created it with courage and idealism, but also with an awareness of the fact that what is important is life, friends, and attempting to make this unjust world a better place in which to live.</p> 
+                                </div> 
+                                {/*<div className="autor-post-tag-share bdr-t-1 bdr-solid bdr-gray p-t20">
                                     <div className="row">
                                         <div className="col-md-6 col-sm-6">
                                             <div className="widget widget_tag_cloud">
@@ -109,17 +114,17 @@ class PostImage extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
-                            <LatestBlogs bgcolor="bg-gray"/>
-                            <BlogComments/>
+                           {/* <LatestBlogs bgcolor="bg-gray"/>
+                            <BlogComments/> */}
                         </div>
-                    </div>
+                   {/* </div> */}
                     {/* SECTION CONTENT END */}
                 </div>
 
 
-                <Footer />
+              {/* <Footer />*/}
 
             </>
         );
