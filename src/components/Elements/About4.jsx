@@ -50,9 +50,18 @@ class About4 extends React.Component {
         };
         return (
             <>
-                <div className="section-full p-t30 p-b80 bg-white inner-page-padding">
-                    <div className="container">
-                        <div className="section-content ">
+                
+
+
+
+
+
+
+
+
+               {/* <div className="section-full p-t30 p-b80 bg-white inner-page-padding"> */}
+                   {/* <div className="container"> */}
+                       {/* <div className="section-content ">
                             <div className="row">
                                 <div className="col-md-5 col-sm-6">
                                     <div className="m-about ">
@@ -90,9 +99,9 @@ class About4 extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> */}
+                   {/* </div> */}
+               {/* </div> */}
             </>
         );
     }

@@ -6,6 +6,7 @@ import About4 from './../Elements/About4';
 import Specialization4 from './../Elements/Specialization4';
 import Team3 from './../Elements/Team3';
 import AboutSummary from './../Elements/AboutSummary';
+import PostImage from './PostImage';
 
 var bnrimg = require('./../../images/banner/1.jpg');
 
@@ -15,14 +16,15 @@ class About extends React.Component {
             <>
 
                 <Header />
-                <div className="page-content">
-                    <Banner title="Creating quality urban lifestyles, building stronger communities." pagename="About Us" bgimage={bnrimg.default}/>
+               {/* <div className="page-content"> */}
+                   {/* <Banner title="Creating quality urban lifestyles, building stronger communities." pagename="About Us" bgimage={bnrimg.default}/> */}
                     <About4 />
+                    <PostImage/>
                     <Specialization4 />
                     <Team3 />
-                    <AboutSummary />
+                   {/* <AboutSummary /> */}
 
-                </div>
+              {/*  </div> */ }
 
                 <Footer />
 

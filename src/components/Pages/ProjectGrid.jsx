@@ -107,21 +107,21 @@ class ProjectGrid extends React.Component {
     render() {
         return (
             <>
-                <Header />
+               {/* <Header /> */}
                 <div className="page-content">
-                <Banner title="Always dedicated and devoted" pagename="Project Grid" bgimage={bnrimg.default}/>
+                {/*<Banner title="Always dedicated and devoted" pagename="Project Grid" bgimage={bnrimg.default}/> */}
                     
                     {/* SECTION CONTENT START */}
                     <div className="section-full p-tb80 inner-page-padding">
                         <div className="container">
                             {/* PAGINATION START */}
                             <div className="filter-wrap p-b30 text-center">
-                                <ul className="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
+                               {/* <ul className="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
                                     <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
                                     {filters.map((item, index) => (
                                     <li key={index}><NavLink to={"#"} data-filter={item.filter} data-hover={item.label}>{item.label}</NavLink></li>
                                     ))} 
-                                </ul>
+                                    </ul> */}
                             </div>
                             {/* PAGINATION END */}
                             {/* GALLERY CONTENT START */}
@@ -133,7 +133,7 @@ class ProjectGrid extends React.Component {
                                             <div className="figcaption">
                                                 <h4 className="mt-tilte">{item.title}</h4>
                                                 <p>{item.description}</p>
-                                                <NavLink to="/project-detail" className="read-more site-button btn-effect">Read More</NavLink>
+                                               {/* <NavLink to="/project-detail" className="read-more site-button btn-effect">Read More</NavLink> */} 
                                                 <a className="mfp-link" href={item.image.default}>
                                                     <i className="fa fa-arrows-alt" />
                                                 </a>
@@ -144,15 +144,15 @@ class ProjectGrid extends React.Component {
                                 
                             </div>
                             {/* GALLERY CONTENT END */}
-                            <div className="m-t50 text-center">
+                            {/*<div className="m-t50 text-center">
                                 <NavLink to={"#"} className="site-button btn-effect">Load More</NavLink>
-                            </div>
+                                </div>*/}
                         </div>
                     </div>
                     {/* SECTION CONTENT END  */}
                 </div>
 
-                <Footer />
+              {/*}  <Footer /> */}
             </>
         );
     };

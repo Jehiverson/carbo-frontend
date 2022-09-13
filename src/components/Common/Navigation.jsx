@@ -31,7 +31,7 @@ class Navigation extends React.Component {
                     <ul className="nav navbar-nav">
                         <li className="active">
                             <NavLink to={""}>Home</NavLink>
-                            <ul className="sub-menu">
+                        {/*    <ul className="sub-menu">
                                 <li>
                                     <NavLink to={"./"}>Home-1</NavLink>
                                 </li>
@@ -44,7 +44,7 @@ class Navigation extends React.Component {
                                 <li>
                                 <NavLink to={"/homepage4"}>Home-4</NavLink>
                                 </li>
-                            </ul>
+                             </ul>*/}
                         </li>
                         <li>
                         <NavLink to={"/about"}>About us</NavLink>
@@ -54,7 +54,7 @@ class Navigation extends React.Component {
                         </li>
                         <li>
                         <NavLink to={""}>Pages</NavLink>
-                            <ul className="sub-menu">
+                           {/* <ul className="sub-menu">
                                 <li>
                                 <NavLink to={""}>Blog</NavLink>
                                     <ul className="sub-menu has-child">
@@ -72,27 +72,27 @@ class Navigation extends React.Component {
                                 <li>
                                 <NavLink to={"/contactus"}>Contact us</NavLink>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </li>
                         <li>
                             <NavLink to={""}>Post detail</NavLink>
-                            <ul className="sub-menu">
+                          {/* <ul className="sub-menu">
                                 <li><NavLink to={"/post-image"}>Post Image</NavLink></li>
                                 <li><NavLink to={"/post-gallery"}>Post Gallery</NavLink></li>
                                 <li><NavLink to={"/post-video"}>Post Video</NavLink></li>
                                 <li><NavLink to={"/post-sidebar"}>Post Right Sidebar</NavLink></li>
-                            </ul>
+                        </ul>*/}
                         </li>
                         <li>
                             <NavLink to={""}>Projects</NavLink>
-                            <ul className="sub-menu">
+                           {/* <ul className="sub-menu">
                                 <li><NavLink to={"/project-grid"}>Project Grid</NavLink></li>
                                 <li><NavLink to={"/project-masonary"}>Project Masonry</NavLink></li>
                                 <li><NavLink to={"/project-carousel"}>Project Carousel</NavLink></li>
                                 <li><NavLink to={"/project-classic1"}>Project Classic-1</NavLink></li>
                                 <li><NavLink to={"/project-classic2"}>Project Classic-2</NavLink></li>
                                 <li><NavLink to={"/project-detail"}>Project Detail</NavLink></li>
-                            </ul>
+                    </ul> */}
                         </li>
                         <li className="submenu-direction">
                             <NavLink to={""}>Shortcodes</NavLink>

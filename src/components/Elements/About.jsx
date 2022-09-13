@@ -92,7 +92,7 @@ class About extends React.Component {
                                         randomised words which don't look even slightly
                   believable. </p>
                                         <div className="text-right">
-                                            <NavLink to="/about" className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                           {/* <NavLink to="/about" className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>*/ } 
                                         </div>
                                     </div>
                                 </div>
