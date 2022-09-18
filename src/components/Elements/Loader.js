@@ -5,7 +5,7 @@ const Loader = () => {
 		<div className="loading-area">
 		<div className="loading-box" />
 		<div className="loading-pic">
-			<div className="cssload-loader">Loading</div>
+			<div className="cssload-loader">Cargando...</div>
 		</div>
 		</div>
 

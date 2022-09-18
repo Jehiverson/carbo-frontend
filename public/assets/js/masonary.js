@@ -180,7 +180,7 @@ jQuery(window).on('load', function () {
 
 // > page loader function by = custom.js ========================= //		
 function page_loader() {
-  jQuery('.loading-area').fadeOut(1000);
+  jQuery('.loading-area').fadeOut(10000);
 }
 
 // > masonry function function by = isotope.pkgd.min.js ========================= //	

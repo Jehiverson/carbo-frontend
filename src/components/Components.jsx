@@ -1,11 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
-import Home2 from './Pages/Home2';
-import Home3 from './Pages/Home3';
-import Home4 from './Pages/Home4';
 import About from './Pages/About';
-import Services from './Pages/Services(productos)';
+import Services from './Pages/Services';
 import BlogGrid from './Pages/BlogGrid';
 import BlogListing from './Pages/BlogListing';
 import BlogMasonary from './Pages/BlogMasonary';
@@ -43,12 +40,8 @@ class Components extends React.Component {
                             
                             <Route path='/' exact component={Home} />
                             <Route path='/Home' exact component={Home}></Route>
-                          {/*  <Route path='/homepage2' exact component={Home2} />
-                                 <Route path='/homepage3' exact component={Home3} />
-                                    <Route path='/homepage4' exact component={Home4} /> */}
-
                             <Route path='/about' exact component={About} />
-                            <Route path='/services' exact component={Services} />
+                            <Route path='/products' exact component={Services} />
 
                             <Route path='/blog-grid' exact component={BlogGrid} />
                             <Route path='/blog-listing' exact component={BlogListing} />

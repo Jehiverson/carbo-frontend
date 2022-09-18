@@ -1,7 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-
-const skins = [1, 2, 3, 4, 5, 6, 7, 8];
 
 var bgimg = require('./../../images/background/bg-boxed.jpg');
 
@@ -82,7 +79,7 @@ class Switcher extends React.Component {
     };
 
     render() {
-        const isSwitchActive = this.state.isSwitchActive;
+        //const isSwitchActive = this.state.isSwitchActive;
 
         return (
             <>
