@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = ({flag, logo, dataContactUs, active}) => {
 
-    const logoImg = flag?logo[0].navbar:require('./../../images/logo-image.png')
+    const logoImg = flag?logo[0].navbar:"https://firebasestorage.googleapis.com/v0/b/carbografitos.appspot.com/o/files%2FNavbar1200x360.png?alt=media&token=89f83526-a3c1-44b6-ac0b-6f7404521a16"
 
     return (
         <>
@@ -15,9 +15,9 @@ const Header = ({flag, logo, dataContactUs, active}) => {
                         <div className="row">
                             <div className="mt-topbar-left clearfix">
                                 <ul className="list-unstyled e-p-bx pull-right">
-                                    <li><i className="fa fa-envelope" /> {dataContactUs.length > 0?dataContactUs[0]?.email:""}</li>
-                                    <li><i className="fa fa-phone" />{dataContactUs.length > 0?dataContactUs[0]?.phone1:""}</li>
-                                    <li><i className="fa fa-clock-o" />{dataContactUs.length > 0?dataContactUs[0]?.schedule:""}</li>
+                                    <li><i className="fa fa-envelope" /> {dataContactUs?dataContactUs[0]?.email:""}</li>
+                                    <li><i className="fa fa-phone" />{dataContactUs?dataContactUs[0]?.phone1:""}</li>
+                                    <li><i className="fa fa-clock-o" />{dataContactUs?dataContactUs[0]?.schedule:""}</li>
                                 </ul>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ const Header = ({flag, logo, dataContactUs, active}) => {
                             <div className="logo-header">
                                 <div className="logo-header-inner logo-header-one">
                                     <NavLink to={"./"}>
-                                        <img src={flag?logoImg:logoImg.default} alt="Shapen"/>
+                                        <img src={logoImg} alt="Shapen"/>
                                     </NavLink>
                                 </div>
                             </div>

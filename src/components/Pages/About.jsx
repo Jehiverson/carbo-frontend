@@ -102,7 +102,7 @@ const About = () => {
           <Header logo={logo} flag={flagLogo} dataContactUs={contactus} active={2}/>
           <PostImage data={carousel}/>
           <Specialization4 data={ourservices}/>
-          <Team3 data={clientTestimonials}/>
+          <Team3 data={clientTestimonials} count={0}/>
           <Footer
             logo={logo}
             flag={flagLogo}

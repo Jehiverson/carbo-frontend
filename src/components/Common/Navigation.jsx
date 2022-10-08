@@ -39,7 +39,7 @@ class Navigation extends React.Component {
                         <NavLink to={"/products"}>Productos</NavLink>
                         </li>
                         <li className={this.props.active === 4?"active":""}>
-                        <NavLink to={"/services"}>Ubicación E Información</NavLink>
+                        <NavLink to={"/location"}>Ubicación E Información</NavLink>
                         </li>
                     </ul>
                 </div>

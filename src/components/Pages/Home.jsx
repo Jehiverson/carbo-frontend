@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import _ from 'loadsh'
 import Header from './../Common/Header';
 import Footer from './../Common/Footer';
 import Slider from './../Elements/Slider';
@@ -7,6 +8,7 @@ import About from './../Elements/About';
 import OurMission from './../Elements/OurMission';
 import OurServices from './../Elements/OurServices';
 import Testimonials from './../Elements/Testimonials';
+
 
 import { HOST } from '../../constants/defaultSetting';
 
@@ -40,6 +42,7 @@ const Home = () => {
         const getDataCarousel = await fetch(`${HOST}carousel/pageUsed/Inicio`)
           .then(response => response.json())
           .then(data => { return data.data });
+          console.log("****",getDataCarousel)
         if (getDataCarousel) {
             setCarousel(getDataCarousel);
         }
@@ -50,7 +53,7 @@ const Home = () => {
           .then(response => response.json())
           .then(data => { return data.data });
         if (getDataProducts) {
-            setProducts(getDataProducts);
+            setProducts(_.sortBy(getDataProducts, 'order'));
         }
       };
 
@@ -69,12 +72,12 @@ const Home = () => {
           .then(response => response.json())
           .then(data => { return data.data })
         if (getDataOurMission) {
-          setOurMission(getDataOurMission);
+          setOurMission(_.sortBy(getDataOurMission, 'order'));
         }
       };
 
       const getDataClientTestimonials = async () => {
-        const getDataClientTestimonials = await fetch(`${HOST}clientTestimonials/page/Testimonio`)
+        const getDataClientTestimonials = await fetch(`${HOST}clientTestimonials/page/Testimonio de clientes`)
           .then(response => response.json())
           .then(data => { return data.data })
           console.log("/",getDataClientTestimonials)
@@ -128,7 +131,7 @@ const Home = () => {
       
     return(
         <>
-        {loading ? <Loader/>:(<>
+        {loading ? <Loader/>:(<> 
           <Header logo={logo} flag={flagLogo} dataContactUs={contactus} active={1}/>
             <div className="page-content">
                 <Slider data={carousel} />

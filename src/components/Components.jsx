@@ -30,6 +30,7 @@ import ModalPopup from './Pages/ModalPopup';
 import Table from './Pages/Table';
 import Tabs from './Pages/Tabs';
 import Video from './Pages/Video';
+import Location from './Pages/Location';
 
 class Components extends React.Component {
     render() {
@@ -39,9 +40,10 @@ class Components extends React.Component {
                         <Switch>
                             
                             <Route path='/' exact component={Home} />
-                            <Route path='/Home' exact component={Home}></Route>
+                            <Route path='/Home' exact component={Home} />
                             <Route path='/about' exact component={About} />
                             <Route path='/products' exact component={Services} />
+                            <Route path='/location' exact component={Location} />
 
                             <Route path='/blog-grid' exact component={BlogGrid} />
                             <Route path='/blog-listing' exact component={BlogListing} />

@@ -17,22 +17,19 @@ class ProjectGrid extends React.Component {
                 document.body.removeChild(script);
             })
         };
-
-        loadScript('./assets/js/masonary.js');
+        setTimeout(() => {
+            loadScript('./assets/js/masonary.js');    
+        }, 500);
+        
 
     };
     
     render() {
         return (
             <>
-               {/* <Header /> */}
-                <div className="page-content">
-                {/*<Banner title="Always dedicated and devoted" pagename="Project Grid" bgimage={bnrimg.default}/> */}
-                    
-                    {/* SECTION CONTENT START */}
-                    <div className="section-full p-tb80 inner-page-padding">
+                    <div className="section-full p-tb80 inner-page-padding ">
                         <div className="container">
-                            <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
+                            <div className="portfolio-wrap mfp-gallery work-grid row">
                                 {this.props.data.map((item, index) => (
                                     <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
                                         <div className="image-effect-two hover-shadow">
@@ -48,10 +45,6 @@ class ProjectGrid extends React.Component {
                             </div>
                         </div>
                     </div>
-                    {/* SECTION CONTENT END  */}
-                </div>
-
-              {/*}  <Footer /> */}
             </>
         );
     };

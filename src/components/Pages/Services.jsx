@@ -66,11 +66,14 @@ const Services = () => {
         <>
             {loading ? <Loader/>:(
                 <>
-                    <Header logo={logo} flag={flagLogo} dataContactUs={contactus} active={3}/>
-                        <div className="page-content">
-                            <ProjectGrid data={products} />
-                            <Footer logo={logo} flag={flagLogo} dataContactUs={contactus} dataFooter={footer}/>
+                    <Header logo={logo} flag={flagLogo} dataContactUs={contactus} active={3}/>  
+                      <div className="page-content">
+                        <div className="container">
+                          <ProjectGrid data={products} />
                         </div>
+                        <Footer logo={logo} flag={flagLogo} dataContactUs={contactus} dataFooter={footer}/>
+                      </div>
+                      
                 </>
             )}
         </>

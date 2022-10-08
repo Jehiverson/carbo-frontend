@@ -1,17 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Switcher from '../Elements/Switcher';
 import moment from 'moment';
 class Footer extends React.Component {
     constructor(props) {
         super(props);
-        this.currentstate = {logo: this.props.flag?this.props.logo[0].footer:require('./../../images/logo-dark.png').default};
+        this.currentstate = {logo: this.props.flag?this.props.logo[0].footer:"https://firebasestorage.googleapis.com/v0/b/carbografitos.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=b6c4da4a-7dda-43f1-85f2-bcbf4d5c1a94"};
     }
     
     updateFooterLogo = (updatedlogo) => {this.currentstate.logo = updatedlogo.default;}
 
     render() {
-        
         return (
             <>
                 <footer className="site-footer footer-large  footer-dark	footer-wide">
@@ -26,7 +24,7 @@ class Footer extends React.Component {
                                         <div className="logo-footer clearfix p-b15">
                                             <img src={this.currentstate.logo} alt="" />
                                         </div>
-                                        <p className="max-w400">{this.props.logo[0]?.slogan}</p>
+                                        <p className="max-w400">{this.props.logo?this.props.logo[0]?.slogan:""}</p>
                                     </div>
                                 </div>
                                 {/* RESENT POST */}
@@ -34,10 +32,10 @@ class Footer extends React.Component {
                                     <div className="widget widget_address_outer">
                                         <h4 className="widget-title">Contáctanos</h4>
                                         <ul className="widget_address">
-                                            <li>Dirección: {this.props.dataContactUs[0]?.address}</li>
-                                            <li>Celular: {this.props.dataContactUs[0]?.phone1}</li>
-                                            <li>Teléfono: {this.props.dataContactUs[0]?.phone1}</li>
-                                            <li>Correo: {this.props.dataContactUs[0]?.email}</li>
+                                            <li>Dirección: {this.props.dataContactUs?this.props.dataContactUs[0]?.address:""}</li>
+                                            <li>Celular: {this.props.dataContactUs?this.props.dataContactUs[0]?.phone1:""}</li>
+                                            <li>Teléfono: {this.props.dataContactUs?this.props.dataContactUs[0]?.phone2:""}</li>
+                                            <li>Correo: {this.props.dataContactUs?this.props.dataContactUs[0]?.email:""}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -49,18 +47,17 @@ class Footer extends React.Component {
                                         <div className="widget-post-bx">
                                             <div className="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
                                                 <div className="mt-post-date text-center text-uppercase text-white p-tb5">
-
-                                                    <strong className="p-date">{moment(this.props.dataFooter.length > 0? this.props.dataFooter[0].createdAt:new Date()).format("DD")}</strong>
-                                                    <span className="p-month">{moment(this.props.dataFooter.length > 0? this.props.dataFooter[0].createdAt:new Date()).format("MM")}</span>
-                                                    <span className="p-year">{moment(this.props.dataFooter.length > 0? this.props.dataFooter[0].createdAt:new Date()).format("YYYY")}</span>
+                                                    <strong className="p-date">{moment(this.props.dataFooter? this.props.dataFooter[0]?.createdAt:new Date()).format("DD")}</strong>
+                                                    <span className="p-month">{moment(this.props.dataFooter? this.props.dataFooter[0]?.createdAt:new Date()).format("MM")}</span>
+                                                    <span className="p-year">{moment(this.props.dataFooter? this.props.dataFooter[0]?.createdAt:new Date()).format("YYYY")}</span>
                                                 </div>
                                                 <div className="mt-post-info">
                                                     <div className="mt-post-header">
-                                                        <h6 className="post-title"><NavLink to={"/post-sidebar"}>{this.props.dataFooter[0]?.title}</NavLink></h6>
+                                                        <h6 className="post-title">{this.props.dataFooter?this.props.dataFooter[0]?.title:""}</h6>
                                                     </div>
                                                     <div className="mt-post-meta">
                                                         <ul>
-                                                            <li className="post-author"><i className="fa fa-user" />{this.props.dataFooter[0]?.description}</li>
+                                                            <li className="post-author"><i className="fa fa-user" />{this.props.dataFooter?this.props.dataFooter[0]?.description:""}</li>
                                                             
                                                         </ul>
                                                     </div>

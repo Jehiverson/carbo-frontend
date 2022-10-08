@@ -1,8 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 var bnr1 = require('./../../images/background/bg-5.png');
-
 class Specialization extends React.Component {
     render() {
         return (
@@ -21,11 +19,10 @@ class Specialization extends React.Component {
                                                 <div className="figcaption">
                                                     <h4>{product.title}</h4>
                                                     <p>{product.subtitle}</p>
-                                                    <NavLink to="/about" ><i className="link-plus bg-primary" /></NavLink>
                                                 </div>
                                         </div>
                                     </div>
-                                    ): (
+                                    ):(
                                     <div className="col-lg-3 col-md-12 col-sm-6 m-b30">
                                         <div className="mt-box our-speciallization-content">
                                             <h3 className="m-t0">{product.title}</h3>
