@@ -19,7 +19,7 @@ class ProjectGrid extends React.Component {
         };
         setTimeout(() => {
             loadScript('./assets/js/masonary.js');    
-        }, 500);
+        }, 1300);
         
 
     };

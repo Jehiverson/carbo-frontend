@@ -127,8 +127,8 @@ const Location = () => {
                                 apiKey={"AIzaSyAfY1DRbspf6E3jYUso-PeI_tdfRXA59i0"}
                                 style={{height: "400px", width: "100%"}}
                                 zoom={12}
-                                center={{lat: Number(location[0].latitud), lng: Number(location[0].longuitud)}}
-                                markers={{lat: Number(location[0].latitud), lng: Number(location[0].longuitud)}} //optional
+                                center={{lat: Number(location.length > 0?location[0].latitud:"14.573380915641735"), lng: Number(location.length > 0?location[0].longuitud:"-90.5571222557638")}}
+                                markers={{lat: Number(location.length > 0?location[0].latitud:"14.573380915641735"), lng: Number(location.length > 0?location[0].longuitud:"-90.5571222557638")}} //optional
                                 />
                             </div>
                         </div>
